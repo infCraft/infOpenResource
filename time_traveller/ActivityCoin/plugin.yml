@@ -1,0 +1,7 @@
+name: ActivityCoin
+main: org.time.activitycoin.ActivityCoin
+version: 1.0.0
+author: Time_Traveller
+api-version: 1.16
+commands:
+  acoin:

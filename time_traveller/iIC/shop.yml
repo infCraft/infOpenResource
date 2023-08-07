@@ -1,0 +1,44 @@
+#商店物品配置表
+#特殊带自定义name,lore,enchantment等的物品在收购时可能会出现无法识别等问题
+#请自行注意
+#价格递增、递减公式在代码内已经定义(线性递减，1000个降到0)
+#每个玩家单独计算卖出数量，bgg说的
+
+#名称
+name: '&d系统商店'
+#税收(收购时有效)
+tax: 0.1
+#税收汇入哪个账户
+tax-player: Time_Traveller
+#出售
+sell:
+  #物品命名空间
+  coal:
+    #价格
+    price: 30
+    #材质，物品英文id
+    material: coal
+  test:
+    price: 10000
+    material: diamond_sword
+    #物品名称
+    name: '&bawa'
+    #物品描述
+    lore:
+    - 'awa?'
+    - 'awa!'
+    #附魔(enchant,level)
+    enchantments:
+    - durability,1
+    #若定义command，则执行command内的内容；若不定义command，默认为获取该物品
+    #可用变量：%player%玩家
+    commands:
+    - 'eco give %player% 10000'
+#收购
+#收购栏不支持commands!
+#只能收购原版物品！
+#若需要其他功能请自行使用其他插件！
+buy:
+  coal:
+    price: 25
+    material: coal
