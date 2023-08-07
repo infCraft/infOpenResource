@@ -1,0 +1,8 @@
+name: ArrowGame
+main: org.Lyrik.ArrowGame.ArrowGameMain
+version: 1.0.0
+author: Lyrik
+
+commands:
+  arrow:
+    description: "开启弓箭大战！"

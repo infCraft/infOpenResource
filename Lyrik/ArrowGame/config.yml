@@ -1,0 +1,17 @@
+score:
+  kill: 10
+  combo: 2
+  death: -4
+time:
+  readyTime: 20
+  boardTime: 20
+items:
+  item1:
+    item: BOW
+    amount: 1
+  item2:
+    item: ARROW
+    amount: 128
+  item3:
+    item: BREAD
+    amount: 32
